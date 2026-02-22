@@ -37,7 +37,7 @@ def main():
 
             path = row[0]
             agent = row[2]
-            dt = datetime.strptime(row[1], "%m/%d/%Y %H:%M:%S")
+            dt = datetime.strptime(row[1], "%Y-%m-%d %H:%M:%S")
 
             if image_pattern.search(path):
                 image_requests += 1
